@@ -1,4 +1,4 @@
-FROM timpietruskyblibla/runpod-worker-comfy:3.6.0-base
+FROM runpod/worker-comfyui:3.10.1-base
 
 # Symlink ComfyUI model dirs to network volume mount point
 RUN rm -rf /comfyui/models/diffusion_models /comfyui/models/text_encoders /comfyui/models/vae /comfyui/models/clip /comfyui/models/unet /comfyui/models/loras && \
